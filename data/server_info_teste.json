@@ -1,0 +1,15 @@
+{
+    "nome_do_servidor": "PeixeHan",
+    "keys_example": [
+
+        {
+            "keys_explanation": "visa testar a manipulação e leitura de arquivos JSON encontrados dentro do servidor"
+        },
+
+        {
+            "key1": "bora_bill",
+            "key2": "bora_fi_do_bill!"
+        }
+    ]
+
+}
