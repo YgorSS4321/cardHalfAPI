@@ -23,7 +23,6 @@ const CardHalfSchema = new Schema({
 );
 
 CardHalfSchema.virtual("url").get(function () {
-    console.log(this.text);
     return `/cards/${this.text}`;
 });
 
