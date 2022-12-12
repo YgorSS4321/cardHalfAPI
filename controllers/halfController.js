@@ -37,8 +37,6 @@ exports.update = async (req, res) => {
         cardField: req.body.cardField
     };
 
-    console.log(filter);
-    console.log(update);
     await cardHalfs.findOneAndUpdate(filter, update).then(function (err, result) {
         console.log(req.body.text);
         msg = "card atualizado com sucesso!";
