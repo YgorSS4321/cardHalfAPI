@@ -6,11 +6,11 @@ var serverInfo = require("../models/server_info_model");
 router.get('/', function(req, res, next) {
   //res.send('respond with a resource');
   var srvInfo = serverInfo.getServerInfo((err, result) => {
-    console.log("result:");
-    console.log(result);
 
-    //if(!err){}
-    res.status(200).json(result);
+    if(err == undefined && result != null){
+      res.status(200).json(result);
+    }
+    
 
 
   });

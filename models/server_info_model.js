@@ -5,6 +5,10 @@ function getServerInfo(callback) {
         
         if(result != undefined && err == undefined){
             var srvInfo = JSON.parse(result);
+            srvInfo = {
+                "nome_do_servidor": srvInfo["nome_do_servidor"]
+            };
+
         }
 
         callback(err, srvInfo);

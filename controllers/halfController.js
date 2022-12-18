@@ -7,6 +7,13 @@ exports.list = async (req, res) => {
     });
 }
 
+exports.listByCardField = async (req, res) => {
+
+    await cardHalfs.find({cardField: req.params.cardField}).exec(function(err, docs) {
+        res.status(200).json(docs);   
+    });
+}
+
 exports.show = (req, res) => {
     res.send(`NÃO IMPLEMENTADO: ${req.params.id}`);
 }
